@@ -7,6 +7,6 @@
  */
 int main(void)
 {	
-	printf("This is a sentence");
+	printf("This is  sentence");
 	return (0);
 }
