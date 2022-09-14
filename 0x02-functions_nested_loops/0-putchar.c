@@ -1,4 +1,4 @@
-#include<unistd.h>
+#include "main.h"
 /**
  * main-prints _putchar to stdout
  *
@@ -7,8 +7,16 @@
  */
 int main(void)
 {
-	write(2,
-		 "_putchar\n", 11);
+	char s[] = "_putchar";
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	_putchar(10);
+
 	return (0);
 
 }
