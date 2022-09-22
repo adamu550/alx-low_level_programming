@@ -1,26 +1,34 @@
-#include "main.h"
-
+#include"main.h"
 /**
- * print_number - Prints an integer using _putchar function
- * @n: Integer to print
- * Return: void
-*/
-
+ *print_number - print number
+ *@n: number to pritn;
+ *Return: void
+ */
 void print_number(int n)
 {
-	int power10 = 1, digit;
+	int b = 1, i = 0, j;
 
 	if (n < 0)
 	{
-		n *= -1;
 		_putchar('-');
 	}
-	while (power10 * 10 <= n)
-		power10 *= 10;
-	while (power10 > 0)
+	while (n / b > 9 || n / b < -9)
 	{
-		digit = (n / power10) % 10;
-		power10 /= 10;
-		_putchar('0' + digit);
+		b = b * 10;
+		i++;
 	}
+	for (j = 0; j <= i; j++)
+	{
+		if (n < 0)
+		{
+			_putchar(-(n / b) + '0');
+		}
+		else
+		{
+			_putchar((n / b) + '0');
+		}
+		n = n % b;
+		b = b / 10;
+	}
+
 }
