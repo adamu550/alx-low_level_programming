@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
 *_strncpy - concat strings
  *@dest: the 1st string
