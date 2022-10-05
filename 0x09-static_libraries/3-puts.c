@@ -1,7 +1,18 @@
-#include "main.h"
+#include"main.h"
 /**
- * _puts - Entry point
- *@s:pointer to
- *Return: nothing.
+ *_puts - print a string
+ *@str: the string
+ *Return: void
  */
-void _puts(char *s);
+
+void _puts(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
+}
