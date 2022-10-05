@@ -1,9 +1,7 @@
 #include "main.h"
-
 /**
- * _atoi - function description
- *@s: pointer to
- * Return: always 0.
+ * atoi - string to integer
+ * @s: string
+ * Return: 0.
  */
-
 int _atoi(char *s);
