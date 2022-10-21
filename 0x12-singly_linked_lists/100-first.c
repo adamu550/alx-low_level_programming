@@ -1,5 +1,5 @@
 #include <stdio.h>
-void first_this(void) _attribute_((constructor));
+void first_this(void)__attribute__((constructor));
 /**
  * first_this - print first before main
  *
